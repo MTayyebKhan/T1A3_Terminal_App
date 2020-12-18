@@ -121,3 +121,38 @@ ticket_attribute_selection = prompt.select("What would you like to adjust?") do 
     menu.choice "VIP", 4
     menu.choice "Cancel", 5
 end
+edit_selection = edit_selection.to_i - 1
+case ticket_attribute_selection
+when 1
+    puts "Enter new name:"
+    name = gets.chomp
+    tickets[edit_selection].name = name
+when 2
+    event = prompt.select("Choose your event:") do |menu|
+        menu.choice 'Trance'
+        menu.choice 'Rock'
+        menu.choice 'Country'
+        menu.choice 'Hip Hop'
+    end	
+    tickets[edit_selection].event = event
+when 3
+    location = prompt.select("Choose a Location:") do |menu|
+        menu.choice 'Front'
+        menu.choice 'Middle'
+        menu.choice 'Back'
+        menu.choice 'Anywhere'
+    end
+    tickets[edit_selection].location = location
+when 4
+    vip = prompt.select("Are you a VIP:") do |menu|
+        menu.choice 'Yes'
+        menu.choice 'No'
+        menu.choice 'IF available/Free upgrade'
+    end
+    tickets[edit_selection].vip = vip
+when 5
+    return
+end
+puts tickets[edit_selection].to_s
+gets
+end
