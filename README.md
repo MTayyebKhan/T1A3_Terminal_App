@@ -70,3 +70,36 @@ Here is a screenshot of my Trello plan:
 As well as a link:
 
 https://trello.com/b/Jvjqmjau/t1a3-terminal-app
+
+## User Documentation
+
+### Instructions for install
+
+To install the latest version of Ruby on your computer, following the instructions at the link below:
+
+https://www.ruby-lang.org/en/documentation/installation/
+
+Then, follow the below steps:
+
+1. Download the application files through the Github link source provided earlier, posted below for convenience:
+
+https://github.com/MTayyebKhan/T1A3_Terminal_App.git
+
+2. Open your terminal and navigate to the directory that the files were cloned to
+
+3. Run the command below command in your terminal
+
+```
+bundle
+``` 
+
+4. Navigate to the src subfolder, then run the below command in your terminal 
+
+
+Give shell.sh executing priviledges
+
+```
+chmod +x shell.sh
+```
+
+&copy; Muhammed Khan
