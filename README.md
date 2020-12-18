@@ -99,7 +99,7 @@ bundle
 ./shell.sh
 ```
 
-If it does not work give shell.sh executing priviledges
+5. If it does not work give shell.sh executing privileges
 
 ```
 chmod +x shell.sh
