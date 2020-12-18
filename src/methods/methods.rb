@@ -1,7 +1,9 @@
+# Gems
 require "tty-prompt"
 require "colorize"
 require "artii"
 
+# Main menu
 def main
 	system("clear")
 	prompt = TTY::Prompt.new
@@ -32,6 +34,7 @@ def main
 	end
 end
 
+# User input information for a new ticket
 def create_ticket
 	system("clear")
 	a = Artii::Base.new  :font => 'slant'
@@ -61,6 +64,7 @@ def create_ticket
 	  return Ticket.new(name, event, location, vip)
 end
 
+# Function for choosing delete or edit
 def ticket_adjust(tickets)
 	system("clear")
 	a = Artii::Base.new  :font => 'slant'
@@ -80,6 +84,7 @@ def ticket_adjust(tickets)
 	return tickets
 end
 
+# Deletion function of tickets
 def ticket_delete(tickets)
     system("clear")
     a = Artii::Base.new  :font => 'slant'
@@ -99,6 +104,7 @@ def ticket_delete(tickets)
     tickets.delete_at(delete_selection.to_i - 1)
 end
 
+# Editing function for tickets
 def ticket_edit(tickets)
     system("clear")
     a = Artii::Base.new  :font => 'slant'
@@ -123,6 +129,7 @@ def ticket_edit(tickets)
 		menu.choice "Cancel", 5
 	end
 	edit_selection = edit_selection.to_i - 1
+	# Case for Editing tickets
 	case ticket_attribute_selection
 	when 1
 		puts "Enter new name:"
