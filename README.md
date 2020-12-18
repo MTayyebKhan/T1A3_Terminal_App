@@ -105,4 +105,4 @@ bundle
 chmod +x shell.sh
 ```
 
-&copy; Muhammed Khan
+&copy; Muhammed Tayyeb Khan
