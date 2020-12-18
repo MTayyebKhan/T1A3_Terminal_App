@@ -95,8 +95,11 @@ bundle
 
 4. Navigate to the src subfolder, then run the below command in your terminal 
 
+```
+./shell.sh
+```
 
-Give shell.sh executing priviledges
+If it does not work give shell.sh executing priviledges
 
 ```
 chmod +x shell.sh
