@@ -1,3 +1,4 @@
+#Class Ticket with attr
 class Ticket
     attr_reader :name, :event, :location, :vip
     attr_writer :name, :event, :location, :vip
