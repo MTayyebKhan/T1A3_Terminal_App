@@ -54,3 +54,19 @@ The program features the following features:
 - Receipt 
   - The user will be given a receipt of there product at the end of choosing their attributes in creating a ticket to show what they are going to purhase.
   - The user will also get an updated receipt after editing aswell to have the same effect as buying a new ticket.
+
+## Application Flow Diagram
+
+Please find a link to my application flow diagram:
+
+<img src="docs/Flowchart.png">
+
+## Project Management Plan (Trello)
+
+Here is a screenshot of my Trello plan:
+
+<img src="docs/trello.png">
+
+As well as a link:
+
+https://trello.com/b/Jvjqmjau/t1a3-terminal-app
