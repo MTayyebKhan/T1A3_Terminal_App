@@ -60,3 +60,22 @@ def create_ticket
   end
 	  return Ticket.new(name, event, location, vip)
 end
+
+def ticket_adjust(tickets)
+	system("clear")
+	a = Artii::Base.new  :font => 'slant'
+	puts a.asciify('EVENT TICKETS').colorize(:red)
+	prompt = TTY::Prompt.new
+	puts "\nWhat would you like to do?"
+	selection = prompt.select("\nChoose an option:") do |menu|
+		menu.choice 'Edit ticket', 1
+		menu.choice 'Cancellation', 2
+		menu.choice 'Menu', 3
+    end
+	if selection == 1
+		ticket_edit(tickets)
+	elsif selection == 2
+		ticket_delete(tickets)
+	end
+	return tickets
+end
