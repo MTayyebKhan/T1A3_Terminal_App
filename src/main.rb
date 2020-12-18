@@ -11,10 +11,10 @@ end
 puts "Welcome #{username} to Event Tickets."
 sleep(1.5)
 
-begin
-    num 10/0
-rescue ZeroDivisionError
-    puts "Division by zero error"
-end
+# begin
+#     num 10/0
+# rescue ZeroDivisionError
+#     puts "Division by zero error"
+# end
 
 main
