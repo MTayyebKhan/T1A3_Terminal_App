@@ -34,3 +34,23 @@ I am confident that I was able to deliver each of these primary features, though
 As this was my first experience developing a terminal application, it was difficult for me to gauge how quickly I was able to complete certain tasks I had set. I am however pleased with what I have produced within only a week.
 
 This assignment is a real skill test of my capabilities at this time of my coding journey.
+
+## Feature Details & Outline
+
+The program features the following features:
+
+- Buy a Ticket
+  - The user is prompted to buy a ticket, this method utilises a Ruby class and several connecting parsing methods and variables to generate a result in an empty array
+  
+  - The user is asked to enter there name with an example of how to enter there name. Buying a ticket involves the user to input a valid string entry followed by menu options prompting what event they wish to book, where they would like to be seated and weather they want a VIP service or not. This is similar to how the user is prompted at the beginning of the application to either buy or edit a ticket.
+
+- Edit Ticket
+  - The user is able to adjust there selection buy editing there tickets and overwriting the tickets atrributes. Exception handling is implemented to make certain there is a ticket that can editing via checking if there is anything within the array first.
+  - The user can then interact with their ticket by a prompt on screen similar to buying a ticket functionality. Users will be prompted to select a ticket via the menu prompt and selecting which ticket attribute they'd like to change, with user input also managed in the same fashion.
+- Cancellation of ticket
+  - The user is able to cancel existing tickets to remove the ticket element from the array of total tickets. Exception handling is implemented to ensure validity of data, where the user is unable to initiate the ticket delete method if there are no existing tickets.
+  - User interaction and error handling are handled identically to the ticket editing method, where the program will consider if the ticket listing is empty before proceeding with the deletion of at item.
+
+- Receipt 
+  - The user will be given a receipt of there product at the end of choosing their attributes in creating a ticket to show what they are going to purhase.
+  - The user will also get an updated receipt after editing aswell to have the same effect as buying a new ticket.
