@@ -79,3 +79,22 @@ def ticket_adjust(tickets)
 	end
 	return tickets
 end
+
+def ticket_delete(tickets)
+    system("clear")
+    a = Artii::Base.new  :font => 'slant'
+	puts a.asciify('CANCELLATION').colorize(:red)
+    prompt = TTY::Prompt.new
+    if tickets.empty? == false
+        delete_selection = prompt.select("Which ticket would you like to cancel:") do |menu|
+            tickets.each do |ticket|
+                menu.choice (tickets.index(ticket) + 1)
+            end
+        end
+    else
+        puts "No tickets purchased. Press 'Enter' to  return to menu."
+        gets
+        return
+    end
+    tickets.delete_at(delete_selection.to_i - 1)
+end
