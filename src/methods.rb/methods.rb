@@ -114,3 +114,10 @@ else
     gets
     return
 end
+ticket_attribute_selection = prompt.select("What would you like to adjust?") do |menu|
+    menu.choice "Name", 1
+    menu.choice "Event", 2
+    menu.choice "Location", 3
+    menu.choice "VIP", 4
+    menu.choice "Cancel", 5
+end
